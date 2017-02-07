@@ -2,15 +2,29 @@ package recursion.model;
 
 public class RecursionTool 
 {			
-	public double calulateFacIterative()
+	public double calculateFacLoop()
 	{
 		
 	}
 	
-	public int calculateFibIterative()
+	public int calculateFibLoop()
 	{
+		int a = 0;
+		int b = 1;
+		
+		
 		
 	}
+	//
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	public double calculateFactorial(double currentNumber)
 	{

@@ -45,6 +45,18 @@ public class RecursionController
 		factorialResponse += "\n " + mathTimer.toString();
 		mathTimer.resetTimer();
 		
+		
+		
+		//
+		mathTimer.startTimer();
+		if(isValid(value))
+		{
+		factorialResponse += mathTool.calculateFacLoop(Integer.parseInt(value));
+		}
+		mathTimer.stopTimer();
+		factorialResponse += "the amount of time it took for loop was: " + mathTimer.toString();
+		
+		//
 		return factorialResponse;
 	}
 	
@@ -61,6 +73,20 @@ public class RecursionController
 		}
 		mathTimer.stopTimer();
 		fibonacciResponse += "\n" + mathTimer.toString();
+		//
+		//
+		//
+		mathTimer.startTimer();
+		if(isValid(value))
+		{
+			fibonacciResponse += mathTool.calculateFibLoop(Integer.parseInt(value));
+		}
+		mathTimer.stopTimer();
+		fibonacciResponse += "the amount of time it took for loop was: " + mathTimer.toString();
+		//
+		///
+		return fibonacciResponse;
+		
 		
 		return fibonacciResponse;
 	}
