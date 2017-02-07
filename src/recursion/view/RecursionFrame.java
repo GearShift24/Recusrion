@@ -23,7 +23,7 @@ public class RecursionFrame extends JFrame
 	{
 		this.setContentPane(appPanel);
 		this.setTitle("bruh");
-		this.setSize(new Dimension(700,700));
+		this.setSize(new Dimension(450,450));
 		this.setResizable(false);
 		this.setVisible(true);
 		
