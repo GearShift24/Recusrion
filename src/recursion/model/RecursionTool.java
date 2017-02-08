@@ -1,19 +1,39 @@
 package recursion.model;
 
+import java.util.*;
+
 public class RecursionTool 
 {			
-	public double calculateFacLoop()
+	public int calculateFacLoop(int factorial)
 	{
-		
+		  int input = 7;
+	        factorial = 1;
+	        while (input > 0)
+	        {
+	          factorial = factorial * input;
+	          input--;
+	        }
+	          return factorial;
 	}
 	
-	public int calculateFibLoop()
+	public int calculateFibLoop(int temp)
 	{
-		int a = 0;
-		int b = 1;
-		
-		
-		
+		int num = 0;
+		int num2 = 1;
+		temp = 0;
+		int loop;
+		int fibonacci;
+		for (loop = 1; loop <= 10; loop ++)
+		{
+		    fibonacci = num + num2;
+		    num = num2;
+		    num2 = fibonacci;
+		    temp = fibonacci;
+		}
+		    
+	
+		    return temp;
+		    
 	}
 	//
 	
